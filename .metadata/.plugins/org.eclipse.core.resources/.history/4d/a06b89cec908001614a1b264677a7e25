@@ -15,11 +15,6 @@ public class implementation1 {
 		}
 	}
 	public static void main(String[] args) {
-		int[] a = {6,5,4,3,2,1};
-		
-		implementation1.bubbleSort(a);
-		for(int i: a) {
-			System.out.println(i);
-		}
+		implementation1.bubbleSort(new int {4,3,2,1});
 	}
 }

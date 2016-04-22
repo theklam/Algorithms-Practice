@@ -1,6 +1,7 @@
 
 public class implementation1 {
 	public static void bubbleSort(int[] a) {
+		
 		int k = 0, counter = 0;
 		while(counter != a.length - 1) {
 			for(int c = 0; c < a.length - k - 1; c++) {
@@ -12,14 +13,6 @@ public class implementation1 {
 			}
 			counter++;
 			k++;
-		}
-	}
-	public static void main(String[] args) {
-		int[] a = {6,5,4,3,2,1};
-		
-		implementation1.bubbleSort(a);
-		for(int i: a) {
-			System.out.println(i);
 		}
 	}
 }
