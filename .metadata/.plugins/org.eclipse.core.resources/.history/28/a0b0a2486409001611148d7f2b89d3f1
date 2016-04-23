@@ -1,0 +1,31 @@
+
+public class implementation1 {
+	public static void selectionSort(int[] a) {
+		int indexMin = 0;
+		int min;
+		int sorted = 0;
+		int c;
+		
+		while(sorted != a.length - 1) {
+			min = 99999;
+			for(c = sorted; c < a.length; c++) {
+				if(a[c] < min) {
+					indexMin = c;
+					min = a[c];
+				}
+			}
+			int temp = a[sorted];
+			a[sorted] = a[indexMin];
+			a[indexMin] = temp;
+			sorted++;
+		}
+	}
+	
+	public static void main(String[] args) {
+		int[] a = {4,3,2,1};
+		implementation1.selectionSort(a);
+		for(int i: a) {
+			System.out.println(i);
+		}
+	}
+}

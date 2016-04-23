@@ -1,0 +1,22 @@
+
+public class implementation1 {
+	public static void selectionSort(int[] a) {
+		int indexMin = 0;
+		int min = 99999;
+		int sorted = 0;
+		int c;
+		
+		while(sorted != a.length) {
+			for(c = sorted; c < a.length; c++) {
+				if(a[c] < min) {
+					indexMin = c;
+					min = a[c];
+				}
+			}
+			int temp = a[sorted];
+			a[sorted] = a[indexMin];
+			a[indexMin] = temp;
+			sorted++;
+		}
+	}
+}
